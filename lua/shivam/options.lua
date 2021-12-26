@@ -19,6 +19,7 @@ local options = {
     smartcase = true,         -- Enable smart case
     updatetime = 300,         -- Faster refresh speed (dedault 4000ms)
     cmdheight = 2,            -- More space in command line
+    showtabline = 2,          -- Always show tab line
 }
 
 for k, v in pairs(options) do

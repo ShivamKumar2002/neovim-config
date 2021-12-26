@@ -8,6 +8,9 @@ local options = {
     smarttab = true,		  -- Enable smart tabbing
     background = "dark",	  -- Use dark background
     termguicolors = true,	  -- Enable terminal gui colors
+    splitbelow = true,            -- Force all horizontal splits to go below current window
+    splitright = true,            -- Force all vertical splits to go to the right of current window
+
 }
 
 for k, v in pairs(options) do

@@ -17,6 +17,7 @@ local options = {
     hlsearch = true,		  -- Highlight all matches
     ignorecase = true,		  -- Ignore case in search
     smartcase = true,         -- Enable smart case
+    updatetime = 300,         -- Faster refresh speed (dedault 4000ms)
 }
 
 for k, v in pairs(options) do

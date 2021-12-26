@@ -6,6 +6,7 @@ local options = {
     shiftwidth = 4,		  -- Number of spaces inserted for each indentation
     tabstop = 4,		  -- Number of spaces inserted for each tab
     smarttab = true,		  -- Enable smart tabbing
+    background = "dark",	  -- Use dark background
 }
 
 for k, v in pairs(options) do

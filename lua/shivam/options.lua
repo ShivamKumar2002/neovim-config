@@ -7,6 +7,7 @@ local options = {
     tabstop = 4,		  -- Number of spaces inserted for each tab
     smarttab = true,		  -- Enable smart tabbing
     background = "dark",	  -- Use dark background
+    termguicolors = true,	  -- Enable terminal gui colors
 }
 
 for k, v in pairs(options) do

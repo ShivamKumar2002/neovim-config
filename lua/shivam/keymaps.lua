@@ -22,3 +22,10 @@ keymap("n", "<C-Up>", ":resize -2<CR>", opts)               -- Ctrl + Up -> Resi
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)             -- Ctrl + Down -> Resize to down
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)    -- Ctrl + Left -> Resize to left
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)   -- Ctrl + Right -> Resize to right
+
+
+-- Visual Mode --
+
+-- Stay in indent mode while indenting
+keymap("v", "<", "<gv", opts)           -- "<" -> Un-indent selected text
+keymap("v", ">", ">gv", opts)           -- ">" -> Indent selected text

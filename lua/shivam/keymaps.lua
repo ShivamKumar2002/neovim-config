@@ -37,3 +37,11 @@ keymap("v", ">", ">gv", opts)           -- ">" -> Indent selected text
 -- Move text up and down
 keymap("v", "<A-Down>", ":m .+1<CR>", opts)           -- Alt + Down -> Move text down
 keymap("v", "<A-Up>", ":m .-2<CR>", opts)           -- Alt + Up -> Move text up
+
+
+-- Visual Block Mode --
+
+-- Move selected text up and down
+keymap("x", "<A-Down>", ":move '>+1<CR>gv-gv", opts)            -- Alt + Down -> Move selected text down
+keymap("x", "<A-Up>", ":move '<-2<CR>gv-gv", opts)              -- Alt + Up -> Move selected text up
+

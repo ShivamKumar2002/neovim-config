@@ -21,6 +21,8 @@ local options = {
     cmdheight = 2,            -- More space in command line
     showtabline = 2,          -- Always show tab line
     showmatch = true,         -- Show matching brackets
+    scrolloff = 100,          -- Number of lines visible up and below the cursor, Very high value always keep the cursor in center while scrolling horizontally
+    sidescrolloff = 100,      -- Similar to scrolloff but vertically
 }
 
 for k, v in pairs(options) do

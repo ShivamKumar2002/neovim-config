@@ -23,6 +23,10 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)             -- Ctrl + Down -> Re
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)    -- Ctrl + Left -> Resize to left
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)   -- Ctrl + Right -> Resize to right
 
+-- Move text up and down
+keymap("n", "<A-Down>", "<Esc>:m .+1<CR>", opts)           -- Alt + Down -> Move text down
+keymap("n", "<A-Up>", "<Esc>:m .-2<CR>", opts)           -- Alt + Up -> Move text up
+
 
 -- Visual Mode --
 

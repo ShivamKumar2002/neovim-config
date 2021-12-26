@@ -12,6 +12,7 @@ local options = {
     splitright = true,            -- Force all vertical splits to go to the right of current window
     cursorline = true,            -- Highlight current line
     fileencoding = "utf-8",       -- Encoding of file
+    clipboard = "unnamedplus",    -- Allow access to system clipboard
 }
 
 for k, v in pairs(options) do

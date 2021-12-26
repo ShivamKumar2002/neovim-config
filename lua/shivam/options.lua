@@ -16,6 +16,7 @@ local options = {
     undofile = true,		  -- Enable persistent undio
     hlsearch = true,		  -- Highlight all matches
     ignorecase = true,		  -- Ignore case in search
+    smartcase = true,         -- Enable smart case
 }
 
 for k, v in pairs(options) do

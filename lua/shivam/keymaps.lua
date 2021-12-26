@@ -33,3 +33,7 @@ keymap("n", "<A-Up>", "<Esc>:m .-2<CR>", opts)           -- Alt + Up -> Move tex
 -- Stay in indent mode while indenting
 keymap("v", "<", "<gv", opts)           -- "<" -> Un-indent selected text
 keymap("v", ">", ">gv", opts)           -- ">" -> Indent selected text
+
+-- Move text up and down
+keymap("v", "<A-Down>", ":m .+1<CR>", opts)           -- Alt + Down -> Move text down
+keymap("v", "<A-Up>", ":m .-2<CR>", opts)           -- Alt + Up -> Move text up

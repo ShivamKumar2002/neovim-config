@@ -13,7 +13,9 @@ local options = {
     cursorline = true,            -- Highlight current line
     fileencoding = "utf-8",       -- Encoding of file
     clipboard = "unnamedplus",    -- Allow access to system clipboard
-    undofile = true,		  -- Enable persistent undo
+    undofile = true,		  -- Enable persistent undio
+    hlsearch = true,		  -- Highlight all matches
+    ignorecase = true,		  -- Ignore case in search
 }
 
 for k, v in pairs(options) do

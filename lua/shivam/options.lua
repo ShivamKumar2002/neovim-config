@@ -11,6 +11,7 @@ local options = {
     splitbelow = true,            -- Force all horizontal splits to go below current window
     splitright = true,            -- Force all vertical splits to go to the right of current window
     cursorline = true,            -- Highlight current line
+    fileencoding = "utf-8",       -- Encoding of file
 }
 
 for k, v in pairs(options) do

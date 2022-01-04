@@ -25,6 +25,10 @@ end
 return packer.startup(function(use)
     -- Plugins here
     use "wbthomason/packer.nvim" -- Have packer manage itself
+
+	-- Colorschemes
+	use 'Mofiqul/dracula.nvim'   -- Dracula theme with additional goodies like LSP, Treesitter etc support
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

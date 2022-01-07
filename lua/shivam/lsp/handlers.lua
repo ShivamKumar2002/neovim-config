@@ -60,6 +60,9 @@ local function lsp_highlight_document(client)
   end
 end
 
+-- Show diagnostics on cursor hover
+vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})]]
+
 local function lsp_keymaps(bufnr)
   local opts = { noremap = true, silent = true }
   -- See `:help vim.lsp.*` for documentation on any of the below functions

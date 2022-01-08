@@ -52,6 +52,9 @@ return packer.startup(function(use)
     use 'nvim-telescope/telescope.nvim' -- Find, Filter, Preview, Pick
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- FZF sorter for telescope written in c
 
+    -- Treesitter
+  use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }  -- Nvim Treesitter configurations and abstraction layer
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

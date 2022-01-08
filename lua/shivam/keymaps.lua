@@ -45,3 +45,8 @@ keymap("v", "<A-Up>", ":m .-2<CR>", opts)           -- Alt + Up -> Move text up
 keymap("x", "<A-Down>", ":move '>+1<CR>gv-gv", opts)            -- Alt + Down -> Move selected text down
 keymap("x", "<A-Up>", ":move '<-2<CR>gv-gv", opts)              -- Alt + Up -> Move selected text up
 
+
+-- Telescope --
+keymap("n", "<leader>ft", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>ft", "<cmd>Telescope live_grep<cr>", opts)
+

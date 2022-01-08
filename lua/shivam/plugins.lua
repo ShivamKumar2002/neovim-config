@@ -25,6 +25,8 @@ end
 return packer.startup(function(use)
     -- Plugins here
     use "wbthomason/packer.nvim" -- Have packer manage itself
+    use 'nvim-lua/plenary.nvim' -- Required by many other plugins
+    use 'kyazdani42/nvim-web-devicons' -- web-devicons for neovim
 
 	-- Colorschemes
 	use 'Mofiqul/dracula.nvim'   -- Dracula theme with additional goodies like LSP, Treesitter etc support
@@ -45,6 +47,10 @@ return packer.startup(function(use)
     use "neovim/nvim-lspconfig" -- enable LSP
     use "williamboman/nvim-lsp-installer" -- simple to use language server installer
     use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
+
+    -- Telescope
+    use 'nvim-telescope/telescope.nvim' -- Find, Filter, Preview, Pick
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- FZF sorter for telescope written in c
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

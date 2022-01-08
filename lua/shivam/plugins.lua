@@ -53,7 +53,8 @@ return packer.startup(function(use)
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- FZF sorter for telescope written in c
 
     -- Treesitter
-  use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }  -- Nvim Treesitter configurations and abstraction layer
+    use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }  -- Nvim Treesitter configurations and abstraction layer
+    use "p00f/nvim-ts-rainbow" -- Rainbow parentheses for neovim using tree-sitter 🌈
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

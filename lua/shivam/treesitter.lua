@@ -21,4 +21,8 @@ configs.setup {
     enable = true,
     extended_mode = true, -- Also highlight non-bracket delimiters like html tags
   },
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  },
 }

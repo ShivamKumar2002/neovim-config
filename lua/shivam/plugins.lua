@@ -28,6 +28,7 @@ return packer.startup(function(use)
     use 'nvim-lua/plenary.nvim' -- Required by many other plugins
     use 'kyazdani42/nvim-web-devicons' -- web-devicons for neovim
     use "windwp/nvim-autopairs" -- A super powerful autopair plugin for Neovim that supports multiple characters
+    use 'numToStr/Comment.nvim'  -- Smart and powerful comment plugin for neovim. Supports treesitter, dot repeat, left-right/up-down motions, hooks, and more
 
 	-- Colorschemes
 	use 'Mofiqul/dracula.nvim'   -- Dracula theme with additional goodies like LSP, Treesitter etc support
@@ -56,6 +57,7 @@ return packer.startup(function(use)
     -- Treesitter
     use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }  -- Nvim Treesitter configurations and abstraction layer
     use "p00f/nvim-ts-rainbow" -- Rainbow parentheses for neovim using tree-sitter 🌈
+    use 'JoosepAlviste/nvim-ts-context-commentstring'  -- Neovim treesitter plugin for setting the commentstring based on the cursor location in a file
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

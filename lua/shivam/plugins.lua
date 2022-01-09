@@ -27,6 +27,7 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim" -- Have packer manage itself
     use 'nvim-lua/plenary.nvim' -- Required by many other plugins
     use 'kyazdani42/nvim-web-devicons' -- web-devicons for neovim
+    use "windwp/nvim-autopairs" -- A super powerful autopair plugin for Neovim that supports multiple characters
 
 	-- Colorschemes
 	use 'Mofiqul/dracula.nvim'   -- Dracula theme with additional goodies like LSP, Treesitter etc support

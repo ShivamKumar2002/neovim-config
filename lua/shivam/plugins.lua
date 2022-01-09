@@ -59,6 +59,9 @@ return packer.startup(function(use)
     use "p00f/nvim-ts-rainbow" -- Rainbow parentheses for neovim using tree-sitter 🌈
     use 'JoosepAlviste/nvim-ts-context-commentstring'  -- Neovim treesitter plugin for setting the commentstring based on the cursor location in a file
 
+    -- Git
+    use "lewis6991/gitsigns.nvim"  -- Super fast git decorations
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

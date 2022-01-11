@@ -29,6 +29,7 @@ return packer.startup(function(use)
     use 'kyazdani42/nvim-web-devicons' -- web-devicons for neovim
     use "windwp/nvim-autopairs" -- A super powerful autopair plugin for Neovim that supports multiple characters
     use 'numToStr/Comment.nvim'  -- Smart and powerful comment plugin for neovim. Supports treesitter, dot repeat, left-right/up-down motions, hooks, and more
+    use {'kyazdani42/nvim-tree.lua', config = function() require'nvim-tree'.setup {} end}  -- A File Explorer For Neovim
 
 	-- Colorschemes
 	use 'Mofiqul/dracula.nvim'   -- Dracula theme with additional goodies like LSP, Treesitter etc support

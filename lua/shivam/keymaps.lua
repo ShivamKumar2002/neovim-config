@@ -50,3 +50,6 @@ keymap("x", "<A-Up>", ":move '<-2<CR>gv-gv", opts)              -- Alt + Up -> M
 keymap("n", "<leader>ft", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>ft", "<cmd>Telescope live_grep<cr>", opts)
 
+-- Nvim-tree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>fe", ":NvimTreeToggle<cr>", opts)

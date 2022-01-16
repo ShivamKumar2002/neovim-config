@@ -27,6 +27,28 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)   -- Ctrl + Right -> R
 keymap("n", "<A-Down>", "<Esc>:m .+1<CR>", opts)           -- Alt + Down -> Move text down
 keymap("n", "<A-Up>", "<Esc>:m .-2<CR>", opts)           -- Alt + Up -> Move text up
 
+-- Buffer navigation with bufferline
+-- Leader b N -> Go to buffer N
+keymap('n', '<Leader>b1', ':BufferLineGoToBuffer 1<CR>', opts)
+keymap('n', '<Leader>b2', ':BufferLineGoToBuffer 2<CR>', opts)
+keymap('n', '<Leader>b3', ':BufferLineGoToBuffer 3<CR>', opts)
+keymap('n', '<Leader>b4', ':BufferLineGoToBuffer 4<CR>', opts)
+keymap('n', '<Leader>b5', ':BufferLineGoToBuffer 5<CR>', opts)
+keymap('n', '<Leader>b6', ':BufferLineGoToBuffer 6<CR>', opts)
+keymap('n', '<Leader>b7', ':BufferLineGoToBuffer 7<CR>', opts)
+keymap('n', '<Leader>b8', ':BufferLineGoToBuffer 8<CR>', opts)
+keymap('n', '<Leader>b9', ':BufferLineGoToBuffer 9<CR>', opts)
+
+keymap('n', '<Leader>b?', ':BufferLinePick<CR>', opts)  -- Leader b ? -> Enter buffer-picking mode
+
+keymap('n', '<Leader><Right>', ':BufferLineCycleNext<CR>', opts)  -- Leader Right -> Go to next buffer
+keymap('n', '<Leader>bn', ':BufferLineCycleNext<CR>', opts)  -- Leader b n -> Go to next buffer
+keymap('n', '<Leader><Left>', ':BufferLineCycleNext<CR>', opts)  -- Leader Left -> Go to previous buffer
+keymap('n', '<Leader>bp', ':BufferLineCyclePrev<CR>', opts)  -- Leader b p -> Go to previous buffer
+
+keymap('n', '<Leader>b<Right>', ':BufferLineMoveNext<CR>', opts)  -- Leader b Right -> Re-order to next
+keymap('n', '<Leader>b<Left>', ':BufferLineMovePrev<CR>', opts)  -- Leader b Left -> Re-order to previous
+
 
 -- Visual Mode --
 
@@ -53,3 +75,4 @@ keymap("n", "<leader>ft", "<cmd>Telescope live_grep<cr>", opts)
 -- Nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>fe", ":NvimTreeToggle<cr>", opts)
+

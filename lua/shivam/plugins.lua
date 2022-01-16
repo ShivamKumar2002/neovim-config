@@ -31,6 +31,7 @@ return packer.startup(function(use)
     use 'numToStr/Comment.nvim'  -- Smart and powerful comment plugin for neovim. Supports treesitter, dot repeat, left-right/up-down motions, hooks, and more
     use {'kyazdani42/nvim-tree.lua', config = function() require'nvim-tree'.setup {} end}  -- A File Explorer For Neovim
     use 'antoinemadec/FixCursorHold.nvim'  -- Fix CursorHold Performance
+    use 'akinsho/bufferline.nvim'  -- A snazzy 💅 buffer line (with minimal tab integration) for Neovim built using lua
 
 	-- Colorschemes
 	use 'Mofiqul/dracula.nvim'   -- Dracula theme with additional goodies like LSP, Treesitter etc support

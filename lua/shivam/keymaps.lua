@@ -54,7 +54,6 @@ keymap("n", "<leader>fl", "<cmd>Telescope find_files<cr>", opts)  -- Leader f f 
 keymap("n", "<leader>ft", "<cmd>Telescope live_grep<cr>", opts)  -- Leader f t -> Find text
 
 -- Nvim-tree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)  -- Leader e -> Toggle file explorer
 keymap("n", "<leader>fe", ":NvimTreeToggle<cr>", opts)  -- Leader f e -> Toggle file explorer
 
 

@@ -3,6 +3,14 @@ if not status_ok then
 	return
 end
 
+local with_root_file = function(builtin, file)
+    return builtin.with({
+        condition = function(utils)
+            return utils.root_has_file(file)
+        end,
+    })
+end
+
 null_ls.setup({
     sources = {
         null_ls.builtins.formatting.clang_format,

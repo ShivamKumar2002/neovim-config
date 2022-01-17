@@ -49,6 +49,10 @@ keymap('n', '<Leader>bp', ':BufferLineCyclePrev<CR>', opts)  -- Leader b p -> Go
 keymap('n', '<Leader>b<Right>', ':BufferLineMoveNext<CR>', opts)  -- Leader b Right -> Re-order to next
 keymap('n', '<Leader>b<Left>', ':BufferLineMovePrev<CR>', opts)  -- Leader b Left -> Re-order to previous
 
+-- Telescope --
+keymap("n", "<leader>fl", "<cmd>Telescope find_files<cr>", opts)  -- Leader f f -> Find files
+keymap("n", "<leader>ft", "<cmd>Telescope live_grep<cr>", opts)  -- Leader f t -> Find text
+
 
 -- Visual Mode --
 
@@ -67,10 +71,6 @@ keymap("v", "<A-Up>", ":m .-2<CR>", opts)           -- Alt + Up -> Move text up
 keymap("x", "<A-Down>", ":move '>+1<CR>gv-gv", opts)            -- Alt + Down -> Move selected text down
 keymap("x", "<A-Up>", ":move '<-2<CR>gv-gv", opts)              -- Alt + Up -> Move selected text up
 
-
--- Telescope --
-keymap("n", "<leader>ft", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>ft", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)

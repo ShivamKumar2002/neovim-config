@@ -24,6 +24,5 @@ null_ls.setup({
         with_root_file(null_ls.builtins.diagnostics.selene,  "selene.toml"),
         null_ls.builtins.diagnostics.phpcs,
         null_ls.builtins.code_actions.eslint,
-        null_ls.builtins.completion.spell,
     },
 })

@@ -50,7 +50,7 @@ keymap('n', '<Leader>b<Right>', ':BufferLineMoveNext<CR>', opts)  -- Leader b Ri
 keymap('n', '<Leader>b<Left>', ':BufferLineMovePrev<CR>', opts)  -- Leader b Left -> Re-order to previous
 
 -- Telescope --
-keymap("n", "<leader>fl", "<cmd>Telescope find_files<cr>", opts)  -- Leader f f -> Find files
+keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)  -- Leader f f -> Find files
 keymap("n", "<leader>ft", "<cmd>Telescope live_grep<cr>", opts)  -- Leader f t -> Find text
 
 -- Nvim-tree

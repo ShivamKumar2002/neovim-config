@@ -23,6 +23,7 @@ end
 
 -- Install your plugins here
 return packer.startup(function(use)
+
     -- Plugins here
     use "wbthomason/packer.nvim" -- Have packer manage itself
     use 'nvim-lua/plenary.nvim' -- Required by many other plugins
@@ -32,6 +33,7 @@ return packer.startup(function(use)
     use {'kyazdani42/nvim-tree.lua', config = function() require'nvim-tree'.setup {} end}  -- A File Explorer For Neovim
     use 'antoinemadec/FixCursorHold.nvim'  -- Fix CursorHold Performance
     use 'akinsho/bufferline.nvim'  -- A snazzy 💅 buffer line (with minimal tab integration) for Neovim built using lua
+    use 'windwp/windline.nvim'  -- Animation statusline, floating window statusline. Use lua + luv make some 🔥🔥🔥
 
 	-- Colorschemes
 	use 'Mofiqul/dracula.nvim'   -- Dracula theme with additional goodies like LSP, Treesitter etc support

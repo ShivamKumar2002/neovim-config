@@ -32,6 +32,8 @@ vim.api.nvim_set_var("nvim_tree_git_hl", 1)  -- will enable file highlight for g
 vim.api.nvim_set_var("nvim_tree_highlight_opened_files", 3)  -- will enable folder and file icon highlight for opened files/directories
 vim.api.nvim_set_var("nvim_tree_create_in_closed_folder", 1)  -- When creating files, sets the path of a file when cursor is on a closed folder to the parent folder when 0, and inside the folder when 1
 vim.api.nvim_set_var("nvim_tree_add_trailing", 1)  -- append a trailing slash to folder names
+vim.api.nvim_set_var("nvim_tree_respect_buf_cwd", 1)  -- Creating a file when the cursor is on a closed folder will set the path to be inside the closed folder when 1, and on the parent folder when 0
+
 
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then

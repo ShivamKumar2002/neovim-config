@@ -34,6 +34,7 @@ return packer.startup(function(use)
     use 'antoinemadec/FixCursorHold.nvim'  -- Fix CursorHold Performance
     use 'akinsho/bufferline.nvim'  -- A snazzy 💅 buffer line (with minimal tab integration) for Neovim built using lua
     use 'windwp/windline.nvim'  -- Animation statusline, floating window statusline. Use lua + luv make some 🔥🔥🔥
+    use 'ahmedkhalf/project.nvim'  -- project.nvim is an all in one neovim plugin written in lua that provides superior project management
 
 	-- Colorschemes
 	use 'Mofiqul/dracula.nvim'   -- Dracula theme with additional goodies like LSP, Treesitter etc support

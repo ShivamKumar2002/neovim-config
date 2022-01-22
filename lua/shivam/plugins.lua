@@ -27,6 +27,7 @@ return packer.startup(function(use)
     -- Plugins here
     use "wbthomason/packer.nvim" -- Have packer manage itself
     use 'nvim-lua/plenary.nvim' -- Required by many other plugins
+    use 'lewis6991/impatient.nvim'  -- Speed up loading Lua modules in Neovim to improve startup time
     use 'kyazdani42/nvim-web-devicons' -- web-devicons for neovim
     use "windwp/nvim-autopairs" -- A super powerful autopair plugin for Neovim that supports multiple characters
     use 'numToStr/Comment.nvim'  -- Smart and powerful comment plugin for neovim. Supports treesitter, dot repeat, left-right/up-down motions, hooks, and more

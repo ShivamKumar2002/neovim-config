@@ -37,6 +37,7 @@ return packer.startup(function(use)
     use 'windwp/windline.nvim'  -- Animation statusline, floating window statusline. Use lua + luv make some 🔥🔥🔥
     use 'ahmedkhalf/project.nvim'  -- project.nvim is an all in one neovim plugin written in lua that provides superior project management
     use 'lukas-reineke/indent-blankline.nvim'  -- This plugin adds indentation guides to all lines
+    use 'goolord/alpha-nvim'  -- a lua powered greeter like vim-startify / dashboard-nvim 
 
 	-- Colorschemes
 	use 'Mofiqul/dracula.nvim'   -- Dracula theme with additional goodies like LSP, Treesitter etc support

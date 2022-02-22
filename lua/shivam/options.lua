@@ -23,7 +23,9 @@ local options = {
     showmatch = true,         -- Show matching brackets
     scrolloff = 100,          -- Number of lines visible up and below the cursor, Very high value always keep the cursor in center while scrolling horizontally
     sidescrolloff = 100,      -- Similar to scrolloff but vertically
-    guicursor =  "a:ver30-nCursor,i-ci:ver30-iCursor-blinkwait300-blinkon200-blinkoff150"  -- Cursor blinking in insert and command line insert mode
+    mouse = 'a',              -- Enable mouse in all windows
+    mousefocus = true,        -- Auto focus under mouse cursor
+    guicursor = "a:ver30-nCursor,i-ci:ver30-iCursor-blinkwait300-blinkon200-blinkoff150"  -- Cursor blinking in insert and command line insert mode
 }
 
 for k, v in pairs(options) do

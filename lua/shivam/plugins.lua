@@ -25,52 +25,190 @@ end
 return packer.startup(function(use)
 
     -- Plugins here
-    use "wbthomason/packer.nvim" -- Have packer manage itself
-    use 'nvim-lua/plenary.nvim' -- Required by many other plugins
-    use 'lewis6991/impatient.nvim'  -- Speed up loading Lua modules in Neovim to improve startup time
-    use 'kyazdani42/nvim-web-devicons' -- web-devicons for neovim
-    use "windwp/nvim-autopairs" -- A super powerful autopair plugin for Neovim that supports multiple characters
-    use 'numToStr/Comment.nvim'  -- Smart and powerful comment plugin for neovim. Supports treesitter, dot repeat, left-right/up-down motions, hooks, and more
-    use {'kyazdani42/nvim-tree.lua', config = function() require'nvim-tree'.setup {} end}  -- A File Explorer For Neovim
-    use 'antoinemadec/FixCursorHold.nvim'  -- Fix CursorHold Performance
-    use 'akinsho/bufferline.nvim'  -- A snazzy 💅 buffer line (with minimal tab integration) for Neovim built using lua
-    use 'windwp/windline.nvim'  -- Animation statusline, floating window statusline. Use lua + luv make some 🔥🔥🔥
-    use 'ahmedkhalf/project.nvim'  -- project.nvim is an all in one neovim plugin written in lua that provides superior project management
-    use 'lukas-reineke/indent-blankline.nvim'  -- This plugin adds indentation guides to all lines
-    use 'goolord/alpha-nvim'  -- a lua powered greeter like vim-startify / dashboard-nvim 
+    
+
+    -- Have packer manage itself
+    use {
+         "wbthomason/packer.nvim",
+    }
+    
+    -- Required by many other plugins
+    use {
+        "nvim-lua/plenary.nvim",
+    }
+
+    -- Speed up loading Lua modules in Neovim to improve startup time
+    use {
+        "lewis6991/impatient.nvim",
+    }
+
+    -- web-devicons for neovim
+   use {
+        "kyazdani42/nvim-web-devicons",
+    }
+
+    -- A super powerful autopair plugin for Neovim that supports multiple characters
+    use {
+        "windwp/nvim-autopairs",
+    }
+
+    -- Smart and powerful comment plugin for neovim. Supports treesitter, dot repeat, left-right/up-down motions, hooks, and more
+    use {
+        "numToStr/Comment.nvim",
+    }
+
+    -- A File Explorer For Neovim
+    use {
+        "kyazdani42/nvim-tree.lua",
+    }
+    
+    -- Fix CursorHold Performance
+    use {
+        "antoinemadec/FixCursorHold.nvim",
+    }
+
+    -- A snazzy 💅 buffer line (with minimal tab integration) for Neovim built using lua
+    use {
+        "akinsho/bufferline.nvim",
+    }
+    
+    -- Animation statusline, floating window statusline. Use lua + luv make some 🔥🔥🔥
+    use {
+        "windwp/windline.nvim",
+    }
+    
+    -- project.nvim is an all in one neovim plugin written in lua that provides superior project management
+    use {
+        "ahmedkhalf/project.nvim",
+    }
+    
+    -- This plugin adds indentation guides to all lines
+    use {
+        "lukas-reineke/indent-blankline.nvim",
+    }
+
+    -- a lua powered greeter like vim-startify / dashboard-nvim 
+    use {
+        "goolord/alpha-nvim",
+    }
+
 
 	-- Colorschemes
-	use 'Mofiqul/dracula.nvim'   -- Dracula theme with additional goodies like LSP, Treesitter etc support
+
+    -- Dracula theme with additional goodies like LSP, Treesitter etc support
+	use {
+        "Mofiqul/dracula.nvim",
+    }
+
 
     -- Completion Plugins
-    use "hrsh7th/nvim-cmp" -- The main completion plugin
-    use "hrsh7th/cmp-buffer" -- buffer completions
-    use "hrsh7th/cmp-path" -- path completions
-    use "hrsh7th/cmp-cmdline" -- cmdline completions
-    use "saadparwaiz1/cmp_luasnip" -- snippet completions
-    use "hrsh7th/cmp-nvim-lsp"  -- nvim-lsp completions
+
+    -- The main completion plugin
+    use {
+        "hrsh7th/nvim-cmp",
+    }
+    
+    -- buffer completions
+    use {
+        "hrsh7th/cmp-buffer",
+    }
+
+    -- path completions
+    use {
+        "hrsh7th/cmp-path",
+    }
+    
+    -- cmdline completions
+    use {
+        "hrsh7th/cmp-cmdline",
+    }
+    
+    -- snippet completions
+    use {
+        "saadparwaiz1/cmp_luasnip",
+    }
+    
+    -- nvim-lsp completions
+    use {
+        "hrsh7th/cmp-nvim-lsp",
+    }
+
 
     -- Snippets
-    use "L3MON4D3/LuaSnip" --snippet engine
-    use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
+    -- Snippet engine
+    use {
+        "L3MON4D3/LuaSnip",
+    }
+    
+    -- a bunch of snippets to use
+    use {
+        "rafamadriz/friendly-snippets",
+    }
+
 
     -- LSP
-    use "neovim/nvim-lspconfig" -- enable LSP
-    use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-    use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-    use "jose-elias-alvarez/null-ls.nvim" -- Formatting, Linting and more. Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
+
+    -- Enable LSP
+    use {
+        "neovim/nvim-lspconfig",
+    }
+    
+    -- Simple to use language server installer
+    use {
+        "williamboman/nvim-lsp-installer",
+    }
+    
+    -- Language server settings defined in json for
+    use {
+        "tamago324/nlsp-settings.nvim",
+    }
+
+    -- Formatting, Linting and more. Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
+    use {
+        "jose-elias-alvarez/null-ls.nvim",
+    }
+
 
     -- Telescope
-    use 'nvim-telescope/telescope.nvim' -- Find, Filter, Preview, Pick
-    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- FZF sorter for telescope written in c
+
+    -- Find, Filter, Preview, Pick
+    use {
+        "nvim-telescope/telescope.nvim",
+    }
+
+    -- FZF sorter for telescope written in c
+    use {
+        "nvim-telescope/telescope-fzf-native.nvim",
+        run = "make",
+    }
+
 
     -- Treesitter
-    use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }  -- Nvim Treesitter configurations and abstraction layer
-    use "p00f/nvim-ts-rainbow" -- Rainbow parentheses for neovim using tree-sitter 🌈
-    use 'JoosepAlviste/nvim-ts-context-commentstring'  -- Neovim treesitter plugin for setting the commentstring based on the cursor location in a file
+    
+    -- Nvim Treesitter configurations and abstraction layer
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate",
+    }
+    
+    -- Rainbow parentheses for neovim using tree-sitter 🌈
+    use {
+        "p00f/nvim-ts-rainbow",
+    }
+    
+    -- Neovim treesitter plugin for setting the commentstring based on the cursor location in a file
+    use {
+        "JoosepAlviste/nvim-ts-context-commentstring",
+    }
+
 
     -- Git
-    use "lewis6991/gitsigns.nvim"  -- Super fast git decorations
+    
+    -- Super fast git decorations
+    use {
+        "lewis6991/gitsigns.nvim",
+    }
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

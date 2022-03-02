@@ -40,6 +40,7 @@ return packer.startup(function(use)
     -- Speed up loading Lua modules in Neovim to improve startup time
     use {
         "lewis6991/impatient.nvim",
+        config = function() require("shivam/impatient") end,
     }
 
     -- web-devicons for neovim
@@ -50,46 +51,55 @@ return packer.startup(function(use)
     -- A super powerful autopair plugin for Neovim that supports multiple characters
     use {
         "windwp/nvim-autopairs",
+        config = function() require("shivam/autopairs") end,
     }
 
     -- Smart and powerful comment plugin for neovim. Supports treesitter, dot repeat, left-right/up-down motions, hooks, and more
     use {
         "numToStr/Comment.nvim",
-    }
+         config = function() require("shivam/comment") end,
+   }
 
     -- A File Explorer For Neovim
     use {
         "kyazdani42/nvim-tree.lua",
-    }
+        config = function() require("shivam/nvim-tree") end,
+   }
     
     -- Fix CursorHold Performance
     use {
         "antoinemadec/FixCursorHold.nvim",
+        config = function() require("shivam/cursorhold") end,
     }
 
     -- A snazzy 💅 buffer line (with minimal tab integration) for Neovim built using lua
     use {
         "akinsho/bufferline.nvim",
-    }
+        config = function() require("shivam/bufferline") end,
+   }
     
     -- Animation statusline, floating window statusline. Use lua + luv make some 🔥🔥🔥
     use {
         "windwp/windline.nvim",
+        config = function() require("shivam/windline") end,
     }
     
     -- project.nvim is an all in one neovim plugin written in lua that provides superior project management
     use {
         "ahmedkhalf/project.nvim",
+        config = function() require("shivam/project") end,
     }
     
     -- This plugin adds indentation guides to all lines
     use {
         "lukas-reineke/indent-blankline.nvim",
+        config = function() require("shivam/indentline") end,
     }
 
     -- a lua powered greeter like vim-startify / dashboard-nvim 
     use {
         "goolord/alpha-nvim",
+        config = function() require("shivam/alpha") end,
     }
 
 
@@ -106,6 +116,7 @@ return packer.startup(function(use)
     -- The main completion plugin
     use {
         "hrsh7th/nvim-cmp",
+        config = function() require("shivam/cmp") end,
     }
     
     -- buffer completions
@@ -152,6 +163,7 @@ return packer.startup(function(use)
     -- Enable LSP
     use {
         "neovim/nvim-lspconfig",
+        config = function() require("shivam/lsp") end,
     }
     
     -- Simple to use language server installer
@@ -167,6 +179,7 @@ return packer.startup(function(use)
     -- Formatting, Linting and more. Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
     use {
         "jose-elias-alvarez/null-ls.nvim",
+        config = function() require("shivam/null-ls") end,
     }
 
 
@@ -175,6 +188,7 @@ return packer.startup(function(use)
     -- Find, Filter, Preview, Pick
     use {
         "nvim-telescope/telescope.nvim",
+        config = function() require("shivam/telescope") end,
     }
 
     -- FZF sorter for telescope written in c
@@ -190,6 +204,7 @@ return packer.startup(function(use)
     use {
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
+        config = function() require("shivam/treesitter") end,
     }
     
     -- Rainbow parentheses for neovim using tree-sitter 🌈
@@ -208,6 +223,7 @@ return packer.startup(function(use)
     -- Super fast git decorations
     use {
         "lewis6991/gitsigns.nvim",
+        config = function() require("shivam/gitsigns") end,
     }
 
     -- Automatically set up your configuration after cloning packer.nvim

@@ -175,7 +175,6 @@ return packer.startup(function(use)
     -- Extension to mason.nvim that makes it easier to use lspconfig with mason.nvim.
     use {
         "williamboman/mason-lspconfig.nvim",
-        config = function() require("shivam/mason-lspconfig") end,
     }
     
     -- Formatting, Linting and more. Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.

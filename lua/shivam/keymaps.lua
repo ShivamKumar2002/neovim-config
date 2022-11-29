@@ -43,7 +43,7 @@ keymap('n', '<Leader>b?', ':BufferLinePick<CR>', opts)  -- Leader b ? -> Enter b
 
 keymap('n', '<Leader><Right>', ':BufferLineCycleNext<CR>', opts)  -- Leader Right -> Go to next buffer
 keymap('n', '<Leader>bn', ':BufferLineCycleNext<CR>', opts)  -- Leader b n -> Go to next buffer
-keymap('n', '<Leader><Left>', ':BufferLineCycleNext<CR>', opts)  -- Leader Left -> Go to previous buffer
+keymap('n', '<Leader><Left>', ':BufferLineCyclePrev<CR>', opts)  -- Leader Left -> Go to previous buffer
 keymap('n', '<Leader>bp', ':BufferLineCyclePrev<CR>', opts)  -- Leader b p -> Go to previous buffer
 
 keymap('n', '<Leader>b<Right>', ':BufferLineMoveNext<CR>', opts)  -- Leader b Right -> Re-order to next

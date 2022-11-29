@@ -8,7 +8,10 @@ options = {
   numbers = function(opts)
     return string.format("%s", opts.ordinal)
   end,
-  indicator_icon = "▎",
+  indicator = {
+	  style = "icon",
+	  icon = "▎",
+  },
   buffer_close_icon = "",
   modified_icon = "●",
   close_icon = "",
@@ -110,28 +113,28 @@ options = {
       if error ~= 0 then
         result[1] = {
           text = "  " .. error,
-          guifg = "#ff6c6b",
+          foreground = "#ff6c6b",
         }
       end
 
       if warning ~= 0 then
         result[2] = {
           text = "  " .. warning,
-          guifg = "#ECBE7B",
+          foreground = "#ECBE7B",
         }
       end
 
       if hint ~= 0 then
         result[3] = {
           text = "  " .. hint,
-          guifg = "#98be65",
+          foreground = "#98be65",
         }
       end
 
       if info ~= 0 then
         result[4] = {
           text = "  " .. info,
-          guifg = "#51afef",
+          foreground = "#51afef",
         }
       end
       return result

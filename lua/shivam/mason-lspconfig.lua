@@ -4,7 +4,8 @@ if not status_ok then
 end
 
 mason_lspconfig.setup({
-  ensure_installed = {}
+    ensure_installed = {},
+    automatic_installation = true,
 })
 
 mason_lspconfig.setup_handlers {

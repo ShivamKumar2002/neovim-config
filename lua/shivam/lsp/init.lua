@@ -3,5 +3,4 @@ if not status_ok then
 	return
 end
 
-require("shivam.lsp.lsp-installer")
 require("shivam.lsp.handlers").setup()

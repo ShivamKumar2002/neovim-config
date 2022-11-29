@@ -165,17 +165,19 @@ return packer.startup(function(use)
         "neovim/nvim-lspconfig",
         config = function() require("shivam/lsp") end,
     }
-    
-    -- Simple to use language server installer
+	
+	-- Easily install and manage LSP servers, DAP servers, linters, and formatters.
     use {
-        "williamboman/nvim-lsp-installer",
-    }
-    
-    -- Language server settings defined in json for
-    use {
-        "tamago324/nlsp-settings.nvim",
+        "williamboman/mason.nvim",
+		config = function() require ("shivam/mason") end,
     }
 
+    -- Extension to mason.nvim that makes it easier to use lspconfig with mason.nvim.
+    use {
+        "williamboman/mason-lspconfig.nvim",
+        config = function() require("shivam/mason-lspconfig") end,
+    }
+    
     -- Formatting, Linting and more. Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
     use {
         "jose-elias-alvarez/null-ls.nvim",

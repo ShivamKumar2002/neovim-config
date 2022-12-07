@@ -25,13 +25,13 @@ end
 return packer.startup(function(use)
 
     -- Plugins here
-    
+
 
     -- Have packer manage itself
     use {
          "wbthomason/packer.nvim",
     }
-    
+
     -- Required by many other plugins
     use {
         "nvim-lua/plenary.nvim",
@@ -65,7 +65,7 @@ return packer.startup(function(use)
         "kyazdani42/nvim-tree.lua",
         config = function() require("shivam/nvim-tree") end,
    }
-    
+
     -- Fix CursorHold Performance
     use {
         "antoinemadec/FixCursorHold.nvim",
@@ -77,19 +77,19 @@ return packer.startup(function(use)
         "akinsho/bufferline.nvim",
         config = function() require("shivam/bufferline") end,
    }
-    
+
     -- Animation statusline, floating window statusline. Use lua + luv make some 🔥🔥🔥
     use {
         "windwp/windline.nvim",
         config = function() require("shivam/windline") end,
     }
-    
+
     -- project.nvim is an all in one neovim plugin written in lua that provides superior project management
     use {
         "ahmedkhalf/project.nvim",
         config = function() require("shivam/project") end,
     }
-    
+
     -- This plugin adds indentation guides to all lines
     use {
         "lukas-reineke/indent-blankline.nvim",
@@ -118,7 +118,7 @@ return packer.startup(function(use)
         "hrsh7th/nvim-cmp",
         config = function() require("shivam/cmp") end,
     }
-    
+
     -- buffer completions
     use {
         "hrsh7th/cmp-buffer",
@@ -128,17 +128,17 @@ return packer.startup(function(use)
     use {
         "hrsh7th/cmp-path",
     }
-    
+
     -- cmdline completions
     use {
         "hrsh7th/cmp-cmdline",
     }
-    
+
     -- snippet completions
     use {
         "saadparwaiz1/cmp_luasnip",
     }
-    
+
     -- nvim-lsp completions
     use {
         "hrsh7th/cmp-nvim-lsp",
@@ -151,7 +151,7 @@ return packer.startup(function(use)
     use {
         "L3MON4D3/LuaSnip",
     }
-    
+
     -- a bunch of snippets to use
     use {
         "rafamadriz/friendly-snippets",
@@ -165,7 +165,7 @@ return packer.startup(function(use)
         "neovim/nvim-lspconfig",
         config = function() require("shivam/lsp") end,
     }
-	
+
 	-- Easily install and manage LSP servers, DAP servers, linters, and formatters.
     use {
         "williamboman/mason.nvim",
@@ -176,7 +176,7 @@ return packer.startup(function(use)
     use {
         "williamboman/mason-lspconfig.nvim",
     }
-    
+
     -- Formatting, Linting and more. Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
     use {
         "jose-elias-alvarez/null-ls.nvim",
@@ -200,19 +200,19 @@ return packer.startup(function(use)
 
 
     -- Treesitter
-    
+
     -- Nvim Treesitter configurations and abstraction layer
     use {
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
         config = function() require("shivam/treesitter") end,
     }
-    
+
     -- Rainbow parentheses for neovim using tree-sitter 🌈
     use {
         "p00f/nvim-ts-rainbow",
     }
-    
+
     -- Neovim treesitter plugin for setting the commentstring based on the cursor location in a file
     use {
         "JoosepAlviste/nvim-ts-context-commentstring",
@@ -220,7 +220,7 @@ return packer.startup(function(use)
 
 
     -- Git
-    
+
     -- Super fast git decorations
     use {
         "lewis6991/gitsigns.nvim",
